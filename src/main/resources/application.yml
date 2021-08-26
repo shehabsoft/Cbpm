@@ -1,0 +1,19 @@
+spring:
+  application:
+    name : camundaService
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=camunda-server
+    username: postgres
+    password: root
+server:
+  port : 9996
+camunda.bpm:
+  admin-user:
+    id: demo
+    password: demo
+    firstName: Demo
+  filter:
+    create: All tasks
+
+
